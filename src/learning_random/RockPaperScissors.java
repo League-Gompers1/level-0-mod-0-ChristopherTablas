@@ -37,9 +37,9 @@ public class RockPaperScissors extends JPanel implements ActionListener{
         URL url;
         try {
             //1. Find a picture of a rock, paper, and scissors on the internet. Replace the URL's below with your images
-            rockImage = ImageIO.read(new URL("https://image.freepik.com/free-icon/letter-x_318-26692.jpg"));  
-            paperImage = ImageIO.read(new URL("https://image.freepik.com/free-icon/letter-x_318-26692.jpg")); 
-            scissorsImage = ImageIO.read(new URL("https://image.freepik.com/free-icon/letter-x_318-26692.jpg")); 
+            rockImage = ImageIO.read(new URL("http://newsdesk.si.edu/sites/default/files/imagecache/snapshot_image/PlymouthRockPiece.jpg"));  
+            paperImage = ImageIO.read(new URL("https://images-na.ssl-images-amazon.com/images/I/412nGpKWIAL._SX355_.jpg")); 
+            scissorsImage = ImageIO.read(new URL("https://images-na.ssl-images-amazon.com/images/I/41b139SbltL._AC_US160_.jpg")); 
         } catch (MalformedURLException ex) {
             Logger.getLogger(RockPaperScissors.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
@@ -79,9 +79,12 @@ public class RockPaperScissors extends JPanel implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         int selection = 0;
         //2. Run the program multiple times. Does the computer always choose the same thing?
+        //YES 
         //3. Make oppenentSelection a random number between 0 and 2;
+          
+        		  
         int opponentSelection = 0;
-        
+        	opponentSelection = new Random().nextInt(3);
         //4. Run the program again. Is the result better?
         
         if(e.getSource() == paperButton){
