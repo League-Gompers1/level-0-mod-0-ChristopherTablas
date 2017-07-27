@@ -27,7 +27,7 @@
 			String destination = JOptionPane.showInputDialog("What is your destination");
 			String birth = JOptionPane.showInputDialog("When is your birthday? ");
 			String gender = JOptionPane.showInputDialog("What is your gender ");
-			System.out.println( " " + last + " / " +  first + " (" + birth + ", " + gender + ")" + " Traveling to" + " " + destination );
+			// System.out.println( " " + last + " / " +  first + " (" + birth + ", " + gender + ")" + " Traveling to" + " " + destination );
 			JOptionPane.showMessageDialog(null, " " + last + " / " +  first + " (" + birth + ", " + gender + ")" + " Traveling to" + " " + destination);
 		}
 		
